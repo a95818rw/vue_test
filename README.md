@@ -33,3 +33,12 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## docker
+
+```bash
+docker stop vuetest
+docker rm vuetest
+docker rmi vuetest:latest
+docker run -d -p 8000:8080 --name vuetest vuetest:latest
+```
